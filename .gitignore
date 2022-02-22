@@ -1,0 +1,4 @@
+.ve
+celerybeat-schedule
+*.pyc
+ecosystem.config.js
