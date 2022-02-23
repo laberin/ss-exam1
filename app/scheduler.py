@@ -68,6 +68,7 @@ def request(url):
         rv = requests.get(url, timeout=3)
     except requests.exceptions.ConnectionError:
         print("error: cannot connect to the server.", url)
+        data["timestamp"] = int(time.time())
         return data
     # parse the fetched data
     try:
